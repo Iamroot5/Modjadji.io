@@ -264,7 +264,8 @@ a {
         <div class="logo-container">
             <div class="logo"><strong>Order food</strong></div>
             <p class="slogan">each kota R20 Free delivery</p>
- <form>
+          
+ <form><p id="output">Waiting for location permission...</p>
     <button type="button" onclick="getLocation()">Get Location</button>
   </form>
 
@@ -522,7 +523,7 @@ body{
 
     function showPosition(position) {
       // Your code to use latitude and longitude
-      document.getElementById("latitude").innerHTML = "Latitude: " + position.coords.latitude + 
+      document.getElementById("output").innerHTML = "Latitude: " + position.coords.latitude + 
                                             "<br>Longitude: " + position.coords.longitude;
     }
 
