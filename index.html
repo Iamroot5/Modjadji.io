@@ -264,7 +264,7 @@ a {
         <div class="logo-container">
             <div class="logo"><strong>Order food</strong></div>
             <p class="slogan">each kota R20 Free delivery</p>
-       <p id="output">Waiting for location permission...</p>   
+         
  <form>
     <button type="button" onclick="getLocation()">Get Location</button>
   </form>
@@ -514,37 +514,7 @@ body{
     transform: translateY(-50%);    
 }
 </style>
- <script>
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else {
-      alert("Geolocation is not supported by this browser.");
-    }
-
-    function showPosition(position) {
-      // Your code to use latitude and longitude
-      document.getElementById("output").innerHTML = "Latitude: " + position.coords.latitude + 
-                                            "<br>Longitude: " + position.coords.longitude;
-    }
-
-    function showError(error) {
-      switch(error.code) {
-        case error.PERMISSION_DENIED:
-          alert("User denied the request for Geolocation.");
-          break;
-        case error.POSITION_UNAVAILABLE:
-          alert("Location information is unavailable.");
-          break;
-        case error.TIMEOUT:
-          alert("The request to get user location timed out.");
-          break;
-        case error.UNKNOWN_ERROR:
-          alert("An unknown error occurred.");
-          break;
-      }
-    }
-  </script>
-
+ 
 </body>
 </html>
 
