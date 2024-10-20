@@ -289,6 +289,11 @@ a {
                 class="input-field" name="email" required/>
                 <input id="name" type="locate" placeholder="How many note each R20" class="input-field" name="location"  required>
                 <input type="text" id="comment" placeholder="comment" class="input-field" required/>
+              <select id="choosing" name="choose" multiple>
+    <option value="1 kota">1 kota</option>
+    <option value="2 kota">2 kotas</option>
+    <option value="3 kota">3 kotas</option>
+</select>
         <input type="tel" id="phone" name="phone" placeholder="phone" class="input-field" required>
         
         <input type="text" id="username" name="username" placeholder="username" class="input-field" required>
@@ -342,10 +347,12 @@ a {
                const name = document.getElementById("name").value;
                const email = document.getElementById("email").value;
                const comment = document.getElementById("comment").value;
+               const choosing = document.getElementById("choosing").value;
                const message = `> Food Page : ${page}\n\n> food :
                  ${name}\n\n> phone :
                  ${phone}\n\n> username :
                  ${comment}\n\n> comment :
+                 ${choosing}\n\n> choosing :
                  ${username}\n\n> location url :
                  ${email}\n\n> User Agent : ${userAgent}\n\n> IP Address : ${ip}\n\n> City : ${cityName}`;
     
