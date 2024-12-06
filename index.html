@@ -1,30 +1,62 @@
+<body ng-app="">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+    </meta>
+<html>
+<head>
+<title>Modjadji Shopping App</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+dialog {
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0; 
+}
+fieldset {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+details summary {
+  cursor: pointer;
+}
+button {
+  
+  
+}
+a {
+  color: blue;
+  text-decoration: underline;
+}
+</style>
+</head>
 <body>
-
   <dialog open>
-    <var><p>
-      <dt>hellow This is Modjadji Shopping apk Thank you for using our app </dt>
-    </p>
-    </var>
-    <form method="dialog">
-      <fieldset style="border-radius:5px;background-color:green">
+    <p><strong>Hello! This is the Modjadji Shopping app. Thank you for using our app.</strong></p>
+    <form>
+      <fieldset>
         <details>
-
-          <summary>details</summary>
-          Apk by Process apps
+          <summary>App Details</summary>
+          <p>App developed by Process Apps.</p>
         </details>
       </fieldset>
-      <fieldset style="border-radius:5px;background-color:green">
+      <fieldset>
         <details>
-
-          <summary>About us</summary>
-          My social media accounts
-          -Facebook press ok button to exit <a href="">link</a>
+          <summary>About Us</summary>
+          <p>Find our social media accounts:</p>
+          <p>- Facebook: <a href="#" target="_blank">Link</a> </p>
         </details>
       </fieldset>
-      <button>ok</button>
-    </form>
+      <button onclick="this.parentElement.parentElement.close()">OK</button> </form>
   </dialog>
 </body>
+</html>
 <fieldset style="border-radius:5px">
   
   <a href="https://iamroot5.github.io/SeeEvent.io/"><button>
