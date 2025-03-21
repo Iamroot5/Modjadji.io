@@ -306,7 +306,19 @@ a {
         <div class="logo-container">
             <div class="logo"><strong>chicken </strong></div>
             <p class="slogan"></p>
-            <p>Press get location</p>
+      <form>
+    <button type="button" onclick="getLocation()">Get Location</button>
+  </form>
+
+  <!-- AngularJS section -->
+  <div ng-app="">
+    <p>
+      Latitude: <input ng-model="latitude" type="text" id="latitude" />
+    </p>
+    <p>
+      Longitude: <input ng-model="longitude" type="text" id="longitude" />
+    </p>      <p>Press get location</p>
+         
          
  <form>
     <button type="button" onclick="getLocation()">Get Location</button>
